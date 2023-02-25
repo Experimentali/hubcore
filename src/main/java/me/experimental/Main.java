@@ -1,10 +1,13 @@
 package me.experimental;
 
-import net.md_5.bungee.api.plugin.Plugin;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends Plugin {
+import java.util.logging.Logger;
+
+public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
-        getLogger().info("Hey there :P");
+        Logger log = getLogger();
+        log.info("Hey there :P");
     }
 }
